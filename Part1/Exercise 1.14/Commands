@@ -1,0 +1,8 @@
+# Run belwo two commands in terminal opened in example-frontend directory
+docker build . -t frontend-project
+docker run -p 5000:5000 frontend-project
+
+
+# Run belwo two commands in terminal opened in example-backend directory
+docker build . -t backend-project
+docker run -p 8080:8080 backend-project
