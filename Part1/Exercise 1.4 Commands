@@ -1,0 +1,9 @@
+docker run -d -it --name ex1pt4 ubuntu
+
+docker exec -it ex1pt4 bash
+
+apt-get update
+apt-get install curl
+exit
+
+docker exec -it ex1pt4 sh -c 'while true; do echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website; done'
