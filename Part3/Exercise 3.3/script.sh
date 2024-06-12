@@ -5,6 +5,6 @@ repo_name=$(basename "$github_repo")
 git clone https://github.com/"$github_repo".git
 cd "$repo_name"
 
-docker build -t ellebee/"$repo_name" .
+docker build -t hassanrbaig/"$repo_name" .
 
 docker push "$dockerhub_repo"
